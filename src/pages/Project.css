@@ -1,0 +1,8 @@
+/* Black background for this page */
+.skills-page,
+.research-page, 
+.resume-page,
+.contacts-page {
+  background: #000000;
+  min-height: 100vh;
+}

@@ -2,6 +2,8 @@ import React from 'react';
 import TypewriterTerminal from '../components/TypewriterTerminal/TypewriterTerminal';
 import ResearchCard from '../components/ResearchCard/ResearchCard';
 import './Research.css'; // optional, if you have styles for layout
+import ProfilePhoto from '../components/ProfilePhoto/ProfilePhoto';
+
 
 const introLines = [
   { type: 'text', text: 'This section features my Research Papers and Patent.' },
@@ -42,6 +44,7 @@ const patents = [
 const Research = () => {
   return (
     <div>
+      <ProfilePhoto size="small" className="floating-identity" />
       <TypewriterTerminal lines={introLines} prompt="$" />
       
       <div className="section-wrapper">

@@ -2,6 +2,7 @@ import React from 'react';
 import TypewriterTerminal from '../components/TypewriterTerminal/TypewriterTerminal';
 import SkillCard from '../components/SkillCard/SkillCard';
 import './Skills.css';
+import ProfilePhoto from '../components/ProfilePhoto/ProfilePhoto';
 
 const introLines = [
   { type: 'text', text: "$ Welcome to Abhishek's Tech Stack!" },
@@ -56,6 +57,7 @@ const skills = [
 const Skills = () => {
   return (
     <div className="skills-page">
+      <ProfilePhoto size="small" className="floating-identity" />
       <TypewriterTerminal lines={introLines} prompt="$" />
       <div className="skills-container">
         {skills.map((skill, index) => (

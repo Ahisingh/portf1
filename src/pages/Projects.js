@@ -1,6 +1,7 @@
 import React from 'react';
 import TypewriterTerminal from '../components/TypewriterTerminal/TypewriterTerminal';
 import ProjectCard from '../components/ProjectCard';
+import ProfilePhoto from '../components/ProfilePhoto/ProfilePhoto';
 
 const projects = [
   {
@@ -49,6 +50,7 @@ const introLines = [
 const Projects = () => {
   return (
     <div>
+      <ProfilePhoto size="small" className="floating-identity" />
       <TypewriterTerminal lines={introLines} prompt={"$"} />
       <div style={{ maxWidth: 900, margin: '2rem auto', display: 'flex', flexWrap: 'wrap', gap: '2rem', justifyContent: 'center' }}>
         {projects.map((project, idx) => (

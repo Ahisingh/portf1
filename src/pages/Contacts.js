@@ -4,6 +4,8 @@ import TypewriterTerminal from '../components/TypewriterTerminal/TypewriterTermi
 import ContactCard from '../components/ContactCard/ContactCard';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
+import ProfilePhoto from '../components/ProfilePhoto/ProfilePhoto';
+
 
 const introLines = [
   { type: 'text', text: "Welcome to Abhishek's Contact Section." },
@@ -35,6 +37,18 @@ const Contacts = () => {
 
   return (
     <div className="contacts-page">
+      <div className="contact-header" style={{
+  textAlign: 'center', 
+  marginBottom: '2rem',
+  padding: '2rem 0'
+}}>
+  <ProfilePhoto size="medium" />
+  <h2 style={{
+    color: '#00ffff',
+    marginTop: '1rem',
+    fontFamily: 'Courier New, monospace'
+  }}>Let's Connect!</h2>
+</div>
       <TypewriterTerminal lines={introLines} prompt="$" />
 
       <div className="contact-card-grid">

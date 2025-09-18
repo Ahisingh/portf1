@@ -1,0 +1,76 @@
+.profile-photo {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  padding: 3px;
+  animation: photoGlow 3s ease-in-out infinite alternate;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.profile-photo:hover img {
+  transform: scale(1.05);
+}
+
+.profile-photo.large {
+  width: 200px;
+  height: 200px;
+}
+
+.profile-photo.medium {
+  width: 150px;
+  height: 150px;
+}
+
+.profile-photo.small {
+  width: 80px;
+  height: 80px;
+}
+
+.photo-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  background: radial-gradient(circle, rgba(0,255,255,0.3) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.profile-photo:hover .photo-glow {
+  opacity: 1;
+}
+
+@keyframes photoGlow {
+  0% {
+    box-shadow: 0 0 20px rgba(0,255,255,0.5);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(255,0,255,0.5);
+  }
+}
+
+
+
+.profile-photo.extra-large {
+  width: 300px;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .profile-photo.extra-large {
+    width: 200px;
+    height: 200px;
+  }
+}
