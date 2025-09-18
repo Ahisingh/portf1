@@ -1,0 +1,55 @@
+.terminal-box {
+  background: #181c22;
+  color: #fff;
+  font-family: 'IBM Plex Mono', 'Fira Mono', 'JetBrains Mono', monospace;
+  border-radius: 1rem;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.28);
+  max-width: 600px;
+  margin: 5rem auto 2rem auto;
+  padding: 2.5rem 2rem 2rem 2rem;
+  font-size: 1.15rem;
+  min-height: 220px;
+  border: 2px solid #23272f;
+}
+
+
+.terminal-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+.terminal-prompt {
+  color: #00ffae;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.blinking-cursor {
+  display: inline-block;
+  width: 1ch;
+  color: #fff;
+  background: none;
+  animation: blink 1s steps(1) infinite;
+}
+
+.terminal-menu-link {
+  color: #00ffae;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: color 0.2s;
+}
+.terminal-menu-link:hover {
+  color: #fff;
+  background: #00ffae;
+  border-radius: 0.3em;
+  padding: 0 0.2em;
+  text-decoration: none;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+} 

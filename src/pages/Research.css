@@ -1,0 +1,23 @@
+.section-wrapper {
+    padding: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    color: #00eaff;
+    font-size: 1.6rem;
+    margin: 2rem 0 1rem;
+    font-weight: bold;
+    border-bottom: 2px solid #00eaff;
+    display: inline-block;
+    padding-bottom: 0.4rem;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
